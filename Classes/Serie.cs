@@ -5,7 +5,6 @@ namespace MyAppDeSeries
 {
     public class Serie
     {
-        //private readonly int   Index;
         internal string         Titulo { get; }
         private  string         Descricao;
         private  uint           Ano;
@@ -16,9 +15,8 @@ namespace MyAppDeSeries
         {
         }
 
-        public Serie(/* int index,*/ string titulo, string descricao, uint ano, GenerosDeSerie genero)
+        public Serie(string titulo, string descricao, uint ano, GenerosDeSerie genero)
         {
-            //this.Index     = index;
             this.Titulo    = titulo    ?? throw new ArgumentNullException(nameof(titulo));
             this.Descricao = descricao ?? throw new ArgumentNullException(nameof(descricao));
             this.Ano       = ano;
@@ -46,7 +44,6 @@ namespace MyAppDeSeries
 
             string ret = string.Concat(
                 barra                ,                 nl,
-                //"Index:             ", this.Index,     nl,
                 "Título:            ", this.Titulo,    nl,
                 "Descrição:         ", this.Descricao, nl,
                 "Gênero:            ", this.Genero,    nl,

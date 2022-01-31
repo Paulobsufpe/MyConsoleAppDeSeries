@@ -6,13 +6,7 @@ namespace MyAppDeSeries
     {
         static void Main(string[] args)
         {
-			//Console.WriteLine(string.Join(' ', args));
-
-
-			//Console.WriteLine(new Serie("Caindo do Céu",
-			//    "Uma viagem pelo mundo em um balão",
-			//    2001, GenerosDeSerie.Aventura));
-
+									
 			Console.Clear();
 			Console.WriteLine("MySeriesApp - Bem vinde!" + Environment.NewLine);
 

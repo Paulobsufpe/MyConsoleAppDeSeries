@@ -33,8 +33,7 @@ namespace MyAppDeSeries
             int idigits;
             for (int i = 0; i < lista.Count; i++)
             {
-                //string titulo = lista[i].Titulo;
-
+                
                 idigits = (i + 1).ToString().Length;
                 string espaco = Serie.ConstroiBarra(" ", digits - idigits);
                 Console.WriteLine($"{espaco}{i+1} - {lista[i].Titulo}");
@@ -81,19 +80,7 @@ namespace MyAppDeSeries
                     continue;
                 }
                 
-                //Serie serie;
-                //try
-                //{
-                //    serie = repo.Retorna(index - 1);
-                //}
-                //catch (Exception)
-                //{
-                //    MsgIndInv("Erro! Tente novamente.",
-                //        ConsoleColor.Red);
-                //    continue;
-                //}
-                //Console.WriteLine(serie);
-                
+                                                                                                                                                                                                                
                 Console.WriteLine("Estas são as informações do cadastro da série");
                 Console.WriteLine();
                 break;
@@ -132,17 +119,7 @@ namespace MyAppDeSeries
                 Console.WriteLine("Para atualizar...");
                 Serie serie = ObterSerie();
                 repo.Atualizar(index - 1, serie);
-                //try
-                //{
-                //    repo.Atualizar(index - 1, serie);
-                //}
-                //catch (Exception)
-                //{
-                //    MsgIndInv("Erro! Tente novamente.",
-                //        ConsoleColor.Red);
-                //    continue;
-                //}
-
+                                                                                                                                                                
                 Console.WriteLine($"O cadastro da série \"{serie.Titulo}\" foi atualizado!");
                 Console.WriteLine();
                 break;
@@ -181,22 +158,7 @@ namespace MyAppDeSeries
                 Serie temp = repo.Retorna(index - 1);
                 repo.Remove(index - 1);
                 Console.Clear();
-                //try
-                //{
-                //    repo.Remove(index - 1);
-                //}
-                //catch (IndexOutOfRangeException)
-                //{
-                //    MsgIndInv();
-                //    continue;
-                //}
-                //catch (Exception)
-                //{
-                //    MsgIndInv("Erro! Tente novamente.",
-                //        ConsoleColor.Red);
-                //    continue;
-                //}
-                Console.WriteLine("O cadastro da série " +
+                                                                                                                                                                                                                                  Console.WriteLine("O cadastro da série " +
                     $"\"{temp.Titulo}\" foi removido!");
                 Console.WriteLine();
                 break;
@@ -273,7 +235,6 @@ namespace MyAppDeSeries
             int idigits;
             for (int i = 0; i < arrayGen.Length; i++)
             {
-                //string titulo = lista[i].Titulo;
                 idigits = (i + 1).ToString().Length;
                 string espaco = Serie.ConstroiBarra(" ", digits - idigits);
                 Console.WriteLine($"{espaco}{i+1} - {arrayGen.GetValue(i)}");
@@ -297,8 +258,6 @@ namespace MyAppDeSeries
                 }
                 else if (keyInfo.KeyChar == 'n')
                 {
-                    //(int Left, int Top) currentPos = Console.GetCursorPosition();
-                    //Console.SetCursorPosition(currentPos.Left - 1, currentPos.Top);
                     Console.Clear();
                     Console.WriteLine("Pulando listagem...");
                     break;
